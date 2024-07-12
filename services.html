@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services | BookEater Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <link href="images/bookeaterlogo.png" rel="icon" id="favicon" sizes="128x128">
+    <script src="https://kit.fontawesome.com/57eb0b8bc1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="Home.html">
+            <img src="Images/bookeaterlogo.png" alt="logo" width="100px" height="100px">
+        </a>
+        <!-- Actions -->
+        <ul class="nav">
+            <li><a href="Home.html" class="button">Home</a></li>
+            <li><a href="About Us.html" class="button">About Us</a></li>
+            <li><a href="services.html" class="button">Services</a></li>
+            <li><a href="#waytocontact" class="button">Contact Us</a></li>
+            <li><a href="login.html" class="button">Log In</a></li>
+            <li><a href="login.html" class="button">Sign Up</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" class="search__input" placeholder="Type your keywords">
+            <button class="search__button">
+                <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <div class="contentBody">
+            <h2>Services</h2>
+            <div class="line"></div>
+            <div class="single-service">
+                <div class="social"><i class="fa fa-book"></i></div>
+                <span></span>
+                <h3>Library Membership</h3>
+                <p>Your borrowing privileges will provide access to a range of physically and digitally library material.</p>
+                <a href="login.html">Sign up</a>
+            </div>
+            <div class="single-service">
+                <div class="social"><i class="fa fa-laptop"></i></div>
+                <span></span>
+                <h3>Report and Feedback</h3>
+                <p>We appreciate your valuable feedback, which would helps us to deliver better services.</p>
+                <a href="#waytocontact">report</a>
+            </div>
+            <div class="single-service">
+                <div class="social"><i class="fa fa-question"></i></div>
+                <span></span>
+                <h3>FAQ</h3>
+                <p>Need assistance? Get answer to the Frequently Asked Questions about your libraries.</p>
+                <a href="https://bookeater.tawk.help/">click here</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        window.addEventListener('scroll',function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);
+            });
+
+    </script>
+        <script src="services.js"></script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="About Us.html">Opening Hours</a></li>
+                    <li><a href="About Us.html">Privacy Policy</a></li>
+                    <li><a href="About Us.html">Terms & Conditions</a></li>
+                    <li><a href="About Us.html">Learn More</a></li>
+                </ul>
+            </div>
+            <div class="footer-section forms">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="login.html">Library Membership</a></li>
+                    <li><a href="#">Report and Feedback</a></li>
+                    <li><a href="https://bookeater.tawk.help/">FAQ</a></li>
+                </ul>
+            </div>
+            <div id="waytocontact">
+            <div class="footer-section follow">
+                <h2>Contact Us</h2>
+                <div class="socials">
+                    <a href="https://www.facebook.com/"><img src="Images/fb.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/bookeaterrr/?utm_source=qr&r=nametag"><img src="Images/ig.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/"><img src="Images/yt.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bookeater Library. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

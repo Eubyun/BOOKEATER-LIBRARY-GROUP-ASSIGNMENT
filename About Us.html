@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutus.css">
+    <link href="images/bookeaterlogo.png" rel="icon" id="favicon" sizes="128x128">
+    <script src="https://kit.fontawesome.com/57eb0b8bc1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="Home.html">
+            <img src="Images/bookeaterlogo.png" alt="logo" width="100px" height="100px">
+        </a>
+        <!-- Actions -->
+        <ul class="nav">
+            <li><a href="Home.html" class="button">Home</a></li>
+            <li><a href="About Us.html" class="button">About Us</a></li>
+            <li><a href="services.html" class="button">Services</a></li>
+            <li><a href="Home.html#waytocontact" class="button">Contact Us</a></li>
+            <li><a href="login.html" class="button">Log In</a></li>
+            <li><a href="login.html" class="button">Sign Up</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" class="search__input" placeholder="Type your keywords">
+            <button class="search__button">
+                <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Title for the Accordion -->
+    <h1 class="accordion-title">About Us</h1>
+
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first" checked>
+            <label for="first">Opening Hours</label>
+            <div class="content">
+                <section class="library-hours">
+                    <h2>Library Opening Hours</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Opening Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>Monday-Thursday</td>
+                                <td>8:00 AM - 6:00 PM</td>
+                            </tr>
+
+                            <tr>
+                                <td>Friday</td>
+                                <td>8:00 AM - 12:00 PM & 1:00 PM - 6:00 PM</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9:00 AM - 4:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>Public Holidays</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">Privacy Policy</label>
+            <div class="content">
+                <p>At Bookeater Library, your privacy is important to us. This policy outlines how we collect, use, and protect your personal information when you use our website.</p>
+                <p>We collect personal data such as your name, email address, and contact details when you register. Additionally, we gather usage data on how you interact with our website and use cookies to enhance your experience. This information helps us provide and improve our services, communicate with you about updates, and understand how our website is used.</p>
+                <p>We may share your information with third-party service providers to operate our website, ensuring they keep your data confidential. We might also disclose your information if required by law. We take reasonable measures to secure your data, but please note that no system is completely secure.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">Terms & Conditions</label>
+            <div class="content">
+                <p>By accessing and using our services, you agree to abide by these terms and conditions. If you do not agree with any part of these terms, please refrain from using our digital library.</p>
+                <p>To use our services, you must register and create an account. Your account information must be kept confidential, and you are responsible for all activities that occur under your account. The content provided through our library is for personal, non-commercial use only. You agree not to modify, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any content or materials obtained from our library.</p>
+                <p>We reserve the right to terminate or suspend your access to our services without prior notice if you violate these terms or for any other reason at our discretion. While we strive for accuracy, we cannot guarantee uninterrupted or error-free service. Your use of our services implies acceptance of these conditions and disclaimer of warranties.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">Learn More</label>
+            <div class="content">
+                <p>Welcome to BookEater Library, where knowledge meets accessibility. Our digital library offers a diverse collection of resources tailored to enrich your learning experience. Whether you're a student, researcher, or avid reader, our platform provides easy access to a wide range of books, articles, and multimedia content.</p>
+                <p>Explore our user-friendly interface designed to enhance your browsing and reading pleasure. Discover new releases, delve into subjects of interest, and stay updated with the latest trends in literature and research. With convenient search functionalities and personalized recommendations, finding the perfect resource has never been easier.</p>
+                <p>Join our community of learners and enthusiasts dedicated to expanding knowledge and fostering intellectual curiosity. Whether you're exploring a new hobby or conducting in-depth research, [Your Digital Library Name] is here to support your journey every step of the way.</p>
+            </div>
+        </li>
+    </ul>
+    <footer>
+        <p>&copy; 2024 Bookeater Library. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        
+        window.addEventListener('scroll',function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);
+            });
+
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 6,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            touchEventsTarget: 'container',
+            simulateTouch: true,
+        });
+    </script>
+</body>
+</html>

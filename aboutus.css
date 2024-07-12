@@ -1,0 +1,269 @@
+:root{
+  --fullShade: #050505;
+  --emptyShade: #ffffff;
+  --lightestShade: #4fb9ae5a;
+  --lightShade: #05998d84;
+  --darkShade: #037c6e;
+  --darkerShade: #025043;
+  --copper: #ecc607;
+
+  --bg: #81cdc6;
+}
+
+*{
+  font-family: "Times New Roman", Times, serif;
+}
+body{
+  background: var(--lightestShade);
+  background-image: linear-gradient(rgba(2, 5, 17, 0.7), rgba(106, 114, 148, 0.7)), url('Images/Header_photo3.jpg');
+  justify-content: center;
+  align-items: center;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+  background: var(--lightShade);
+  border-radius: 6px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 7px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--lightShade);
+  transition: 0.5s;
+  z-index: 1000;
+}
+.sticky{
+  background: var(--darkShade);
+  box-shadow: 0 5px 10px var(--darkerShade);
+}
+header .nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+header ul li{
+  list-style: none;
+  margin: 9px;
+}
+header ul li a{
+  text-decoration: none;
+  padding: 6px;
+  gap: 3px;
+}
+.button {
+  font-size: 15px;
+  color: var(--copper);
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 300ms;
+  transition-property: color;
+}
+.button:focus,
+.button:hover {
+  color: var(--emptyShade);
+}
+.button:focus:after,
+.button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+.button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--emptyShade);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.search {
+  padding: 0.7rem 1rem;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: var(--darkerShade);
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 12em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: var(--darkerShade);
+}
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+.search__button {
+  border: none;
+  background-color: #f4f2f200;
+  margin-top: .1em;
+}
+.search__button:hover {
+  cursor: pointer;
+}
+.search__icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: var(--darkerShade);
+}
+
+  /*accordion*/
+  .accordion{
+    margin: 0px auto;
+    width: 600px;
+    margin-left: 280px;
+   
+    }
+  
+    .accordion li{
+      list-style: none;
+      width: 100%;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 8px;
+      background: #025043;
+      box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    }
+  
+    .accordion li label{
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      font-weight: bold;
+      color: #ecc607;
+    }
+  
+    label::before{
+        content: "+";
+        content: 10px;
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+  
+    input[type="radio"]{
+      display: none;
+    }
+  
+    .accordion .content{
+      color: white;
+      padding: 0 10px;
+      line-height: 26px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s, padding 0.5s;
+    }
+  
+    .accordion input[type="radio"]:checked + label + .content{
+      max-height: 400px;
+      padding: 10px 10px 20px;
+    }
+  
+    .accordion input[type="radio"]:checked + label::before{
+      content: "-";
+    }
+
+/*accordion title*/
+.accordion-title {
+  text-align: center;
+  margin: 100px auto 20px; /* Adjust the margin as needed */
+  font-size: 60px;
+  font-weight: bold;
+  color: #ecc607; /* Use a color that fits your design */
+  text-transform: uppercase;
+}
+
+.library-hours {
+  margin:  auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.library-hours h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: var(--darkerShade);
+}
+
+.library-hours table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.library-hours th, .library-hours td {
+  padding: 10px;
+  border: 1px solid var(--lightShade);
+}
+
+.library-hours th {
+  background-color: var(--lightShade);
+  color: var(--emptyShade);
+}
+
+.library-hours td {
+  background-color: var(--lightestShade);
+  color: var(--fullShade);
+}
+
+.library-hours tr:nth-child(even) td {
+  background-color: var(--lightShade);
+}
+
+
+/*footer*/
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: var(--lightShade);
+  color: #ffffff;
+}
