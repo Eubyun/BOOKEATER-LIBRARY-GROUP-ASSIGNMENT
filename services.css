@@ -227,15 +227,16 @@ header ul li a {
   left: 110%;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 footer {
   background-color: var(--lightShade);
   color: var(--emptyShade);
   padding: 20px 0;
   margin-top: 50px;
   text-align: center;
-}
-
-  main .wrapper h2 {
-    font-size: 30px;
-  }
 }
