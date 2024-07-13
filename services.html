@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Services | BookEater Library</title>
-            <link href="Images/bookeaterlogo.png" rel="icon" id="favicon" sizes="128x128">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="services.css">
+    <link href="images/bookeaterlogo.png" rel="icon" id="favicon" sizes="128x128">
     <script src="https://kit.fontawesome.com/57eb0b8bc1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -54,7 +54,6 @@
             </div>
             <div class="single-service">
                 <div class="social"><i class="fa fa-question"></i></div>
-                <span></span>
                 <h3>FAQ</h3>
                 <p>Need assistance? Get answer to the Frequently Asked Questions about your libraries.</p>
                 <a href="https://bookeater.tawk.help/">click here</a>
@@ -62,18 +61,18 @@
         </div>
     </main>
 
-    <script>
-
-        window.addEventListener('scroll',function(){
-                var header = document.querySelector('header');
-                header.classList.toggle('sticky',window.scrollY > 0);
-            });
-
-    </script>
-        <script src="services.js"></script>
+    <div class="clearfix"></div>
 
     <footer>
         <p>&copy; 2024 Bookeater Library. All rights reserved.</p>
     </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    <script src="services.js"></script>
 </body>
 </html>
